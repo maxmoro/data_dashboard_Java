@@ -1,0 +1,98 @@
+class OrgChart {
+ 
+ private OrgData data;
+ private DataSource dataSource;
+ private int autoMode;
+ private float layerH;
+ private float maxValue;
+ private float boxStep= 0.11;
+ private float boxStepInc=0.01;
+ private int totRows;
+ private String selectedId="";
+ private HashMap<String, OrgData> myData;
+    
+ protected HashMap<String, Boxes> boxes;
+ 
+ public OrgChart(DataSource dataSource){
+    this.dataSource=dataSource; 
+    totRows = dataSource.getTotRows();
+    boxes = new HashMap<String, Boxes>();
+    myData = dataSource.getData();
+ }
+  
+ public void setBoxStep(float boxStep){this.boxStep=boxStep;}
+  
+ public void setBoxStepInc(float boxStepInc){this.boxStepInc=boxStepInc;}
+  
+ public void incBoxStep(){
+    if(autoMode==1){
+      boxStep=boxStep + boxStepInc;
+      if(boxStep>=.85 || boxStep<=.1) boxStepInc=-boxStepInc;
+    }
+  }
+    
+  public void changeAutoMode(){
+    autoMode++;
+    if(autoMode>=2) autoMode=0;;
+  }
+    
+  public void drawChart(float x, float y, float chartWidth, float chartHeight){
+    int l = dataSource.getTotLayers();
+    layerH=(chartHeight*.85)/l;
+    maxValue = dataSource.getMaxValue();
+    drawChartLoop(dataSource.getHead(), x+chartWidth*.05, y+chartHeight*.10, chartWidth*.9);
+    //TEXT
+    fill(0);
+    printText("Organization Chart and Expenses Levels",chartWidth*.8,chartHeight*.05,x+chartWidth*.1,y+chartHeight*.05);
+    printText("Double Click on a Box to Drill Down",chartWidth*.2,chartHeight*.2,x+0,y+chartHeight*.01);
+    printText("Last Update " + dataSource.getUpdateDate(),chartWidth*.5,chartHeight*.02,x+chartWidth*.5,y+chartHeight*.98);
+    //LEGEND
+    drawBox(x+chartWidth*.05,y+chartHeight*.90,chartHeight*.05,chartWidth*.1,10,"Within Budget",maxValue,0);
+    drawBox(x+chartWidth*.05,y+chartHeight*.95,chartHeight*.05,chartWidth*.1,-10,"Outside Budget",maxValue,0);
+    //printText("Green = Within Budget   | Red = Outside Budget",chartWidth*.5ght*.03,0,chartHeight*.98);
+  }
+  
+  private void drawChartLoop(String parentId,float x,float y,float parentW){
+    int childs = dataSource.getNumChilds(parentId);
+    
+    int boxSelected=0;
+    Boxes box;
+    if(childs!=0){
+      float childW = parentW/childs;
+      for(Map.Entry me : myData.entrySet()){
+        data=(OrgData)me.getValue();
+        if(int(data.parentId)==int(parentId)){
+          if(data.id == selectedId) boxSelected = 1; else boxSelected=0;
+          
+          drawBox(x,y,layerH,childW,data.value,data.name,maxValue,boxSelected);
+          box = new Boxes();
+          box.id =data.id;
+          box.X=x;
+          box.Y=y;
+          box.W=childW;
+          box.H=layerH;
+          boxes.put(data.id, box);
+          
+          drawChartLoop(data.id,x ,y+layerH+1,childW-1);
+          x=x+childW+1;
+        }
+      }
+    }
+  }
+ 
+  public Boxes getBox(float x, float y){
+    Boxes box;
+    for(Map.Entry me : boxes.entrySet()){
+      box=(Boxes)me.getValue();
+      if ((x  >= box.X) && (x < (box.X+box.W)) && (y >= box.Y) && (y < (box.Y+box.H))){
+        return(box);
+      }
+    }
+    return (null);
+  }
+  
+  public void setSelected(String id){
+    selectedId = id; //<>//
+  }
+ 
+}

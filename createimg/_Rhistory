@@ -1,0 +1,447 @@
+install.packages(c('shiny','shinydashboard'))
+datatable(mtcars, extensions = "RowGroup", options = list(rowGroup=list(dataSrc=2)))
+DT::datatable(mtcars, extensions = "RowGroup", options = list(rowGroup=list(dataSrc=2)))
+mtcars
+devtools::install_github("rstats-db/odbc@SQLTable")
+odbc::writeD
+q()
+install.packages(c("bindr", "hms", "igraph", "packrat", "Rcpp", "rsconnect", "stringdist", "stringi", "survey", "tinytex", "xts", "yaml"))
+install.packages('yaml')
+install.packages('shiny')
+q()
+install.packages('DBI')
+install.packages('odbc')
+install.packages('odbc')
+q()
+devtools::install_github("r-dbi/odbc")
+devtools::install_github("r-dbi/odbc")
+q()
+install.packages('DBI')
+install.packages('odbc')
+q()
+devtools::install_github("r-dbi/odbc")
+q()
+install.packages('odbc'
+)
+q()
+devtools::install_github("r-dbi/odbc")
+devtool
+q()
+devtools::install_github("r-dbi/DBI")
+q()
+install.packages('odbc')
+devtools::install_github("r-dbi/DBI")
+q()
+install.packages("reproducer")
+library("reproducer", lib.loc="~/R/win-library/3.5")
+detach("package:reproducer", unload=TRUE)
+remove.packages("reproducer", lib="~/R/win-library/3.5")
+reprex(  {
+library(feather)
+data=mtcars;for (i in 1:2) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+#############
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+message("Saving RDS on Local")
+system.time(saveRDS(data,r))
+message("Reading RDS on Local")
+system.time(readRDS(r))
+message("Saving Feather on Local")
+system.time(feather::write_feather(data,f))
+message("Reading Feather on Local")
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##########
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+message("Saving RDS on Network")
+system.time(saveRDS(data,r))
+message("Reading RDS on Network")
+system.time(readRDS(r))
+message("Saving Feather on Network")
+system.time(feather::write_feather(data,f))
+message("Reading Feather on Network")
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:2) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+#############
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+message("Saving RDS on Local")
+system.time(saveRDS(data,r))
+message("Reading RDS on Local")
+system.time(readRDS(r))
+message("Saving Feather on Local")
+system.time(feather::write_feather(data,f))
+message("Reading Feather on Local")
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##########
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+message("Saving RDS on Network")
+system.time(saveRDS(data,r))
+message("Reading RDS on Network")
+system.time(readRDS(r))
+message("Saving Feather on Network")
+system.time(feather::write_feather(data,f))
+message("Reading Feather on Network")
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:2) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+#############
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+message("Saving Feather on Local")
+system.time(feather::write_feather(data,f))
+message("Reading Feather on Local")
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##########
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+message("Saving RDS on Network")
+system.time(saveRDS(data,r))
+message("Reading RDS on Network")
+system.time(readRDS(r))
+message("Saving Feather on Network")
+system.time(feather::write_feather(data,f))
+message("Reading Feather on Network")
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:2) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+#############
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##########
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:3) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+#############
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##########
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:10) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+#############
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##########
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:10) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+##### LOCAL ####
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##### NETWORK ####
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:18) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+##### LOCAL ####
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##### NETWORK ####
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:8) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+##### LOCAL ####
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##### NETWORK ####
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:10) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+##### LOCAL ####
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##### NETWORK ####
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:12) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+##### LOCAL ####
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##### NETWORK ####
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:14) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+##### LOCAL ####
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##### NETWORK ####
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+reprex::reprex(  {
+library(feather)
+data=mtcars;for (i in 1:15) {data=rbind(data,data)}
+nrow(data) #8 Million rows
+##### LOCAL ####
+r='c:/temp/dataTest.rds'
+f='c:/temp/dataTest.feather'
+## Saving RDS on Local
+system.time(saveRDS(data,r))
+## Reading RDS on Local
+system.time(readRDS(r))
+## Saving Feather on Local
+system.time(feather::write_feather(data,f))
+## Reading Feather on Local
+system.time(feather::read_feather(f))
+file.remove(r,f)
+##### NETWORK ####
+r='//bogenfs52/HRDSFS/Labor Cost/dataTest.rds'
+f='//bogenfs52/HRDSFS/Labor Cost/dataTest.feather'
+## Saving RDS on Network
+system.time(saveRDS(data,r))
+## Reading RDS on Network
+system.time(readRDS(r))
+##  Saving Feather on Network
+system.time(feather::write_feather(data,f))
+## Reading Feather on Network
+system.time(feather::read_feather(f))
+file.remove(r,f)
+})
+.libPaths()
+.libPaths()
+.libPaths()
+.libPaths()
+.libPaths()
+install.packages(c("dbplyr", "ggplot2", "mime"))
+.libPaths()
+install.packages('HRWFIDB')
+install.packages('caret')
+install.packages(c("dplyr", "ellipsis", "ggpubr", "git2r", "mvtnorm", "officer", "pillar", "remotes", "rlang", "tinytex", "xfun"))
+setwd("C:\\Users\\mmoro\\OneDrive - Micron Technology, Inc\\Master MSDS\\Data Visualization\\Processing_Max\\sketch_08_MidTerm\\createimg")
+data= read.csv("../org.csv")
+data= read.csv("../data/org.csv")
+data
+files=dir()
+files
+files=dir(pattern='jpg')
+files
+[1:len(files)]
+length(file)
+length(files)
+data
+f=1
+file.copy(files[f],paste0('../data/',data$`ï..id`[f],'.jpg'))
+data= read.csv("../data/org.csv")
+files=dir(pattern='jpg')
+for(f in c(1:length(files)){
+c(1:length(files)
+)
+for(f in c(1:length(files))){
+file.copy(files[f],paste0('../data/',data$`ï..id`[f],'.jpg'),overwrite=TRUE)
+}

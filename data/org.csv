@@ -1,0 +1,79 @@
+﻿id,name,parent_id,value,update
+235195,CEO,0,0,7/1/2019
+22321,"Svp, Human Resources",235195,352,7/1/2019
+63044,"Vp, Global Hr Business Partnering",22321,237,7/1/2019
+105410,"Sr Director, Global Talent Acquisition",22321,140,7/1/2019
+170887,"Sr Director, Hr Solutions & Analytics",22321,112,7/1/2019
+191368,"Sr Director, Talent Development",22321,430,7/1/2019
+258748,"Vp, Total Rewards",22321,-185,7/1/2019
+262851,"Sr. Director, Global Hr Services",22321,40,7/1/2019
+184152,"Director, Japan Country Hrbp",63044,370,7/1/2019
+215235,"Director, North Asia Hrbp",63044,42,7/1/2019
+251704,"Director, Global Hrbp, Sga, Finance, Gcm",63044,260,7/1/2019
+140907,"Director, Global Hrbp Fe Operations",63044,330,7/1/2019
+166211,"Director, Global Hrbp",63044,49,7/1/2019
+10657,"Sr Director, Global Hrbp - Td & Engineer",63044,428,7/1/2019
+174219,"Director, Na/Emea Talent Acquisition",105410,490,7/1/2019
+88279,"Director, Talent Acquisition",105410,-143,7/1/2019
+234333,"Sr Manager, Talent Acquisition",105410,45,7/1/2019
+257781,"Director, Japan Talent Acquisition",105410,436,7/1/2019
+249008,"Director, Global Hr Workforce Analytics",170887,115,7/1/2019
+45197,"Sr Manager, Hr Solutions",170887,334,7/1/2019
+163279,"Sr Manager, Hr Systems",170887,182,7/1/2019
+177827,"Dir, Global Learning And Development",191368,155,7/1/2019
+256894,"Dir, Global Executive & Leadership Dev",191368,-174,7/1/2019
+240222,"Sr Manager, Global Mobility",191368,175,7/1/2019
+257355,"Sr Manager, Global Stock",258748,60,7/1/2019
+127923,"Director, Global Heath, Wellness & Advoc",258748,-40,7/1/2019
+135715,"Director, Asia Comp & Benefits",258748,55,7/1/2019
+7977,"Director, Global Hr Services",262851,-164,7/1/2019
+5933,"Director, Global Employee Relations",262851,-110,7/1/2019
+111907,"Sr Manager, Emea Hr Services",262851,-148,7/1/2019
+141262,"Sr Manager, Er - Apac",5933,-123,7/1/2019
+144661,"Sr. Specialist, Csc",7977,31,7/1/2019
+62698,"Sr Manager, Global Hr Services",7977,440,7/1/2019
+218774,"Manager, Customer Service Center",7977,250,7/1/2019
+184667,"Manager, Customer Service Center",7977,59,7/1/2019
+185244,"Manager, Payroll",7977,195,7/1/2019
+265928,"Senior Manager, Global Hr Services",7977,-174,7/1/2019
+265677,"Director, Global Hr Business Partner Nve",10657,-51,7/1/2019
+261539,"Manager, Talent Acquisition",88279,243,7/1/2019
+257834,"Manager, Talent Acquisition",88279,283,7/1/2019
+19853,"Sr Manager, Talent Acquisition",88279,-47,7/1/2019
+168199,"Manager, College Program",88279,435,7/1/2019
+141030,"Sr. Manager, Benefits",127923,-150,7/1/2019
+188569,"Manager, Global Wellbeing",127923,-139,7/1/2019
+239401,"Sr. Manager, Benefits",127923,-149,7/1/2019
+66075,"Manager, South Asia Comp And Benefits",135715,233,7/1/2019
+72463,"Sr Manager, Singapore Country Hrbp",140907,196,7/1/2019
+251814,"Director, Malaysia Country Hrbp",140907,390,7/1/2019
+260959,"Director, India Country Hrbp",140907,438,7/1/2019
+52028,"Director, Emea Hr Operations",166211,267,7/1/2019
+179622,"Sr Manager, Cross Regional Hrbp, Na&Asia",166211,23,7/1/2019
+245382,"Manager, University Relations",174219,429,7/1/2019
+179481,"Sr Manager, Talent Acquisition",174219,464,7/1/2019
+181758,"Manager, Talent Acquisition",174219,473,7/1/2019
+256903,"Director, L&D - Asia",177827,256,7/1/2019
+32688,"Sr Manager, L&D - Na & Emea",177827,108,7/1/2019
+42521,"Sr Manager, L&D - Programs And Processes",177827,101,7/1/2019
+179806,"Global Oe Sr Program Mgr, Onboarding",177827,-128,7/1/2019
+188217,"Sr Manager, China, S. Korea Country Hrbp",215235,83,7/1/2019
+210651,Recruiting Supervisor,234333,33,7/1/2019
+238507,"Manager, Taiwan University Relations",234333,272,7/1/2019
+227993,"Manager, Taiwan Talent Acquisition",234333,-34,7/1/2019
+164278,Sr Recruiter,234333,43,7/1/2019
+138463,"Manager, Global Mobility",240222,-127,7/1/2019
+184053,"Manager, Global Mobility",240222,-99,7/1/2019
+251359,Senior Recruiter,19853,387,7/1/2019
+186587,"Supervisor, C&B Svc & Payroll",62698,-199,7/1/2019
+209734,"Manager, South Asia Payroll",62698,431,7/1/2019
+170108,"Manager, Customer Service Center",62698,450,7/1/2019
+182506,"Sr Manager, Er Services",141262,468,7/1/2019
+185592,"Sr Manager, Employee Relations - Taiwan",141262,-42,7/1/2019
+207796,"Hr Business Partner - Sales, Ccg",179622,353,7/1/2019
+122092,"Manager, Hrbp - Asia Region",179622,203,7/1/2019
+62239,"Manager, Hrbp- Na Region, Deg",179622,130,7/1/2019
+228001,"Manager, Wellness & Tm Programs",188569,204,7/1/2019
+227952,"Sr Manager, Talent Development Services",256903,-118,7/1/2019
+181996,"Sr Manager, Talent Development Services",256903,297,7/1/2019
+167236,"Manager, Talent Development Services",256903,315,7/1/2019
